@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+header div{
+    background-color: #EAC926;
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    flex-wrap: wrap;
+}
+header div img{
+    width: 45%;
+}
+header h1{
+    width: 45%;
+    text-align: center;
+    font-size: larger;
+    justify-content: center;
+}
+body{
+    margin: 5px;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+main .register{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+main form{
+    margin: 5%;
+    padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+@media(min-width: 769px){
+    /* MD2 */
+    main.login form button {
+        transition: color, background-color 300ms;
+    }
+    main.login form button:hover {
+        background-color: #0022AA;
+        color: #ffffff;
+    }
+  /* End MD2 */
+}

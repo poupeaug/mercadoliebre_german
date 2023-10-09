@@ -1,0 +1,295 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+p{
+    font-size: 12px;
+}
+header{
+    background-color: #EAC926;
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    flex-wrap: wrap;
+}
+header div{
+    display: flex;
+    width: 100%;
+    margin-top: 5px;
+}
+header div.top-header{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+header div.logo{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+header.form{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2px;
+    font-size: 11px;
+    width: 45%;
+}
+header .form .submit {
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+}
+header .form .input {
+    background-color: #fff;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+header.top-header, article.compra{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+header article{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+header article .compra{
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.burger-menu{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+.burger-menu i{
+    background-color: #0044aa;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+.barras{
+    display: none;
+}
+section.banner img{
+    width: 100%;
+}
+main{
+    text-align: center;
+    width: 90%;
+    margin: auto;
+}
+main section img{
+    width: 90%;
+}
+main section h4{
+    padding-bottom: 10px;
+    color: #666;
+}
+.container{
+    background-color: #fff;
+    margin: 10px 0px;
+}
+main div.articulo{
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: baseline;
+    width: 100%;
+}
+main section i{
+    color: #39b54a;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;    
+}
+main section h3{
+    color: #666;
+    margin:20px 0px;
+    font-size: 24px;
+}
+.price{
+    font-size: 18px;
+    flex: 30%;
+    text-align: center;
+
+}
+.descuento{
+    font-size: 16px;
+    color: #39b54a;
+    flex: 70%;
+    text-align: left;
+    font-weight: normal;
+}
+h4.description{
+    font-size: 16px;
+    display: none;
+    font-weight: normal;
+}
+footer{
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+footer i{
+    font-size: 2em;
+    color: #1259c3;
+}
+footer h4{
+    font-size: 2em;
+}
+
+@media(min-width: 361px){
+    header div input{
+        width: 44%;
+        height: 20px;
+        padding:5px;
+        
+        top: 10px;
+        left: 5px;
+    }
+    header div button{
+        height: 20px;
+        width: 8%;
+        position: relative;
+        top: 10px;
+        left: 5px;
+    }
+    header div.barras{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: 12px;
+        margin-left: 5px;
+    }
+    header ul li{
+        list-style-type: none;
+    }
+    header .barras .nav-bar li{
+        margin: 3px;
+    }
+    header .barras .login-bar li{
+        margin: 3px;
+    }
+    header ul li a {
+        text-decoration: none;
+        color: #000;
+    }
+   .nav-bar, .login-bar{
+        display: flex;
+        flex-direction: row;
+    }
+    main section div.productos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    main section div.productos.container{
+        width: 45%;
+    }
+    .price,.discount {
+    width: 50%;
+    }
+    h4.description{
+        display: block;
+    }
+    .container{
+        box-shadow: 0px 0px 10px rgb(100,100,100);
+        width: 40%;
+        margin-bottom: 10 px;
+    }
+    div.burger-menu{
+        display: none;
+    }    
+}
+@media(min-width: 769px){
+    header div input{
+        width: 44%;
+        height: 30px;
+        padding:5px;
+        position: relative;
+        top: 25px;
+        left: 15px;   
+    }
+    header div button{
+        height: 30px;
+        width: 6%;
+        position: relative;
+        top: 25px;
+        left: 15px;
+    }
+    header .barras .nav-bar li{
+        padding: 10px;
+    }
+    header .barras .login-bar li{
+        margin: 15px;
+        padding: 10px;
+    }
+    /* MD1-1 */
+    main section.description{
+        position: relative;
+        opacity: 0;
+        transition: opacity 300ms;
+    }
+    main section.container:hover .description{
+        opacity: 1;
+    }
+    /* End MD1-1 */
+    main section.container{
+        width: 20%;
+        box-shadow: none;
+    }
+
+    /* MD1-2 */
+    main section.container{
+        width: 22%;
+        box-shadow: none;
+        transition: box-shadow 300ms;
+        cursor: pointer;
+    }
+    main section.container:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    /* End MD1-2 */
+    /* MD1-3 */
+    main section.container .fa-truck{
+        transition: transform 300ms;
+    }
+    main section.container:hover .fa-truck{
+        transform: rotate(-90deg);
+    }
+    /* End MD1-3 */
+    
+}
